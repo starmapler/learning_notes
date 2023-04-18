@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "interest/movies/torrents.md",
+                "file": "course/习近平新时代中国特色社会主义思想概论/马克思主义中国化时代化新的飞跃.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "interest/movies/torrents.md",
+                "file": "course/习近平新时代中国特色社会主义思想概论/马克思主义中国化时代化新的飞跃.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "interest/movies/torrents.md",
+                "file": "course/习近平新时代中国特色社会主义思想概论/马克思主义中国化时代化新的飞跃.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "interest/movies/torrents.md"
+                "file": "course/习近平新时代中国特色社会主义思想概论/马克思主义中国化时代化新的飞跃.md"
               }
             }
           }
@@ -148,7 +148,8 @@
   },
   "active": "0b726babaccea64a",
   "lastOpenFiles": [
-    "[.md",
-    "interest/movies/torrents.md"
+    "course/习近平新时代中国特色社会主义思想概论/坚持和发展中国特色社会主义的总任务.md",
+    "interest/movies/torrents.md",
+    "[.md"
   ]
 }
