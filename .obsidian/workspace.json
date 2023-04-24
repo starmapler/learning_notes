@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b40324a8c23c391a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "course/习近平新时代中国特色社会主义思想概论/坚持和发展中国特色社会主义的总任务.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa961a145cacfb2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "course/习近平新时代中国特色社会主义思想概论/大纲图谱.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course/习近平新时代中国特色社会主义思想概论/马克思主义中国化时代化新的飞跃.md",
+                "file": "course/习近平新时代中国特色社会主义思想概论/大纲图谱.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course/习近平新时代中国特色社会主义思想概论/马克思主义中国化时代化新的飞跃.md",
+                "file": "course/习近平新时代中国特色社会主义思想概论/大纲图谱.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course/习近平新时代中国特色社会主义思想概论/马克思主义中国化时代化新的飞跃.md"
+                "file": "course/习近平新时代中国特色社会主义思想概论/大纲图谱.md"
               }
             }
           }
@@ -146,9 +171,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0b726babaccea64a",
+  "active": "aa961a145cacfb2e",
   "lastOpenFiles": [
     "course/习近平新时代中国特色社会主义思想概论/坚持和发展中国特色社会主义的总任务.md",
+    "course/习近平新时代中国特色社会主义思想概论/大纲图谱.md",
+    "course/习近平新时代中国特色社会主义思想概论/马克思主义中国化时代化新的飞跃.md",
+    "未命名.md",
     "interest/movies/torrents.md",
     "[.md"
   ]
