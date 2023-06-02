@@ -1,12 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-'''
-@File    :   plot.py
-@Time    :   2023/05/24 15:17:43
-@Author  :   Henry Stone 
-@Version :   1.0
-'''
-
 import matplotlib.pyplot as plt
 import numpy as np
 from random import randint
@@ -18,26 +9,48 @@ import sys
 import argparse
 
 def main():
-    draw()
+    for i in range(len(sys.argv)):
+        if sys.argv[i] == 'iv':
+            iv(sys.argv[i+1])
+        if sys.argv[i] == 'cv':
+            cv(sys.argv[i+1])
 
-def draw():
-    xzhou = [1.0 1.1 1.2 1.3 1.4 1.5 1.55 1.6 1.65 1.7 1.8 1.9 2.0 2.1 2.2 2.3 2.4]
-    yzhou = [0.203	0.257	0.333	0.450	0.711	1.050	1.530	1.595	1.471	1.167	0.745	0.547	0.437	0.352	0.302	0.264	0.235]
+def cv(filename):
+    voltage = []
+    current = []
     j = 0
     fig = plt.figure(num=1,figsize=(5,5))
     ax=fig.add_subplot(111)
 
-    #names = glob.glob(filename + '*')
+    names = glob.glob(filename + '*')
     i = 0
+    for name in names:
+
+        voltage = []
+        current = []
+
+        with open(name, 'r', encoding='UTF-8') as f:
+            print(1)
+            for line in f.readlines():
+                try:
+                    fargs = list(map(float, line.strip('\n').strip().split(',')))
+                    voltage.append(-fargs[0])
+                    current.append(fargs[3])
+                except Exception as e:
+                    print(str(e))
+                    pass
+        voltage.pop(0)
+        current.pop(0)
+        #print(voltage)
+        #print(current)
+        colors=list(mcolors.CSS4_COLORS.keys())
+        ax.plot(voltage, current, 
+                color = mcolors.CSS4_COLORS[colors[i+3]],
+                label = name, marker = 'o')
+        i = i + 1
     
-    colors=list(mcolors.CSS4_COLORS.keys())
-    ax.plot(xzhou, yzhou, 
-            color = mcolors.CSS4_COLORS[colors[i+3]],
-            label = '$ 100 \Omega $', marker = 'o')
-    i = i + 1
-    
-    #plt.xlim(0, 105)
-    #plt.ylim(0.2e-7, 1.8e-7)
+    plt.xlim(0, 105)
+    plt.ylim(0.2e-7, 1.8e-7)
     #plt.rc('font', size=16)
     ax.yaxis.get_offset_text().set_fontsize(18)
     #plt.ticklabel_format(style='sci', axis='y', scilimits=(0,0), labelsize=18)
